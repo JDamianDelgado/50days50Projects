@@ -1,0 +1,40 @@
+body {
+  background-color: beige;
+  overflow: hidden;
+}
+
+#btn {
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgb(156, 156, 156);
+  transition: 1.5s;
+}
+
+#input {
+  height: 45px;
+  width: 35px;
+  position: relative;
+  transition: 1.5s;
+  outline: none;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.search.active #input {
+  width: 275px;
+  outline: none;
+}
+
+.search.active #btn {
+  transform: translateX(198px);
+}
